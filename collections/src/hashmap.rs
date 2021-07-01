@@ -23,7 +23,7 @@ pub fn main() {
 
     println!("average {:?}", average(vec![1, 2, 43, 4]));
     println!("median {:?}", median(vec![1, 2, 43, 4, 5]));
-    println!("popular {:?}", popular(vec![1, 2, 2, 43, 4, 5]));
+    println!("popular {:?}", popular(vec![1, 2, 2, 43, 4, 4, 4, 5]));
 }
 
 fn average(v: Vec<i32>) -> i32 {
@@ -35,10 +35,10 @@ fn average(v: Vec<i32>) -> i32 {
 }
 
 fn median(v: Vec<i32>) -> i32 {
-    let mut copy_v = v;
-    let median_index = copy_v.len() / 2;
-    copy_v.sort();
-    copy_v[median_index]
+    let mut v = v;
+    let median_index = v.len() / 2;
+    v.sort();
+    v[median_index]
 }
 
 fn popular(v: Vec<i32>) -> i32 {
