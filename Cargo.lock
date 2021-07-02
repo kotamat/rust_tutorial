@@ -15,6 +15,10 @@ name = "enums"
 version = "0.1.0"
 
 [[package]]
+name = "errors"
+version = "0.1.0"
+
+[[package]]
 name = "function"
 version = "0.1.0"
 
