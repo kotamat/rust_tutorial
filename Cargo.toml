@@ -21,5 +21,6 @@ members = [
     "restaurant",
     "collections",
     "errors",
-    "generics"
+    "generics",
+    "tests",
 ]
