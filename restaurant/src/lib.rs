@@ -23,18 +23,18 @@ mod back_of_house {
         pub fn summer(toast: &str) -> Breakfast {
             Breakfast {
                 toast: toast.to_string(),
-                seasonal_fruit: "peaches".to_string()
+                seasonal_fruit: "peaches".to_string(),
             }
         }
     }
 
     pub enum Appetizer {
         Soup,
-        Salad
+        Salad,
     }
 }
 
-pub fn eat_at_restaurant () {
+pub fn eat_at_restaurant() {
     // let mut meal = back_of_house::Breakfast::summer("Rye");
     let mut meal = Breakfast::summer("Rye");
     meal.toast = "Wheat".to_string();

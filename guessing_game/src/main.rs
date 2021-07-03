@@ -19,10 +19,10 @@ fn main() {
 
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
-            Err(typed) =>  {
+            Err(typed) => {
                 println!("you typed : {}", typed);
-                continue
-            },
+                continue;
+            }
         };
 
         println!("You guessed: {}", guess);

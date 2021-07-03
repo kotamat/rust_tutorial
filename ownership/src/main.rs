@@ -18,7 +18,6 @@ fn main() {
 
     run_change();
 
-
     // slice
     let mut s = String::from("hello world");
     let word = first_word(&s);

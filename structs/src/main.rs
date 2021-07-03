@@ -50,4 +50,3 @@ fn build_user(username: String, email: String) -> User {
         active: true,
     }
 }
-

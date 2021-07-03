@@ -7,18 +7,18 @@ pub fn main() {
     scores.insert("Yellow".to_string(), 50);
     println!("scores : {:?}", scores);
 
-//     collect
+    //     collect
     let teams = vec!["Blue".to_string(), "Yellow".to_string()];
     let initial_scores = vec![10, 50];
 
     let mut scores: HashMap<_, _> = teams.into_iter().zip(initial_scores.into_iter()).collect();
     println!("scores : {:?}", scores);
 
-//     overwrite
+    //     overwrite
     scores.insert("Blue".to_string(), 20);
     println!("overwrote scores : {:?}", scores);
 
-//     entries
+    //     entries
     scores.entry("Yellow".to_string()).or_insert(50);
 
     println!("average {:?}", average(vec![1, 2, 43, 4]));

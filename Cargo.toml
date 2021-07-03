@@ -23,4 +23,5 @@ members = [
     "errors",
     "generics",
     "tests",
+    "functional_features",
 ]

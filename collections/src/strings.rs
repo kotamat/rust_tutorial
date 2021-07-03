@@ -15,7 +15,6 @@ pub fn main() {
     let s3 = "toe".to_string();
     let s = format!("{}-{}-{}", s1, s2, s3);
 
-
     for c in "テストを実装してみる👩‍👩‍👧‍👦".chars() {
         println!("{}", c)
     }

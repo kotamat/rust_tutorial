@@ -65,7 +65,6 @@ pub fn greeting(name: &str) -> String {
     format!("Hello!")
 }
 
-
 pub struct Guess {
     value: i32,
 }

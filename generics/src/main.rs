@@ -1,7 +1,7 @@
 use std::borrow::Borrow;
 
-mod traits;
 mod lifetime;
+mod traits;
 
 fn main() {
     let number_list = vec![34, 50, 25, 100, 65];

@@ -1,5 +1,5 @@
-mod strings;
 mod hashmap;
+mod strings;
 
 fn main() {
     // vector
@@ -12,7 +12,7 @@ fn main() {
     let v = vec![1, 2, 3];
     println!("vector {:?}", v);
 
-//     read vector
+    //     read vector
     let v = vec![1, 2, 3, 4, 5];
     let third = &v[2];
 
@@ -20,7 +20,7 @@ fn main() {
 
     match v.get(2) {
         None => println!("There is no third element"),
-        Some(third) => println!("The third element is {}", third)
+        Some(third) => println!("The third element is {}", third),
     }
 
     if let Some(elem) = v.get(100) {
@@ -39,12 +39,11 @@ fn main() {
     let row: Vec<SpreadsheetCell> = vec![
         SpreadsheetCell::Int(3),
         SpreadsheetCell::Float(3.12),
-        SpreadsheetCell::Text("blue".to_string())
+        SpreadsheetCell::Text("blue".to_string()),
     ];
 
-//     string
+    //     string
     strings::main();
-//     hashmap
+    //     hashmap
     hashmap::main();
 }
-

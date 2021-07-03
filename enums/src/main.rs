@@ -1,5 +1,5 @@
-mod matches;
 mod if_let;
+mod matches;
 
 enum IpAddrKind {
     V4,
@@ -20,7 +20,6 @@ enum IpAddr3 {
     V4(u8, u8, u8, u8),
     V6(String),
 }
-
 
 fn main() {
     let home = IpAddr {

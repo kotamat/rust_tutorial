@@ -1,7 +1,7 @@
 use std::cmp::Ordering;
 use std::fs::File;
-use std::io::{Error, ErrorKind, Read};
 use std::io;
+use std::io::{Error, ErrorKind, Read};
 use std::panic::panic_any;
 
 fn main() {
@@ -29,7 +29,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
 
     match f.read_to_string(&mut s) {
         Ok(_) => Ok(s),
-        Err(e) => return Err(e)
+        Err(e) => return Err(e),
     }
 }
 
@@ -60,12 +60,12 @@ fn file_read_or_create() {
         Err(error) => match error.kind() {
             ErrorKind::NotFound => match File::create("hello.txt") {
                 Ok(fc) => fc,
-                Err(e) => panic!("Problem creating the file: {:?}", e)
+                Err(e) => panic!("Problem creating the file: {:?}", e),
             },
             other_error => {
                 panic!("Problemn opening the file: {:?}", other_error)
             }
-        }
+        },
     };
 }
 
@@ -73,9 +73,8 @@ fn file_read_or_create_closure() {
     let file_name = "closure.txt";
     let f = File::open(file_name).unwrap_or_else(|error| {
         if error.kind() == ErrorKind::NotFound {
-            File::create(file_name).unwrap_or_else(|error| {
-                panic!("Problem creating the file: {:?}", error)
-            })
+            File::create(file_name)
+                .unwrap_or_else(|error| panic!("Problem creating the file: {:?}", error))
         } else {
             panic!("Problem opening the file: {:?}", error)
         }
@@ -91,7 +90,7 @@ fn check_custom_type(guess: String) {
     loop {
         let guess: i32 = match guess.trim().parse() {
             Ok(num) => num,
-            Err(_) => continue
+            Err(_) => continue,
         };
         if guess < 1 || guess > 100 {
             println!("The secret number will be between 1 and 100.");

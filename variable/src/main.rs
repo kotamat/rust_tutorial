@@ -24,5 +24,8 @@ fn main() {
 
     let element = a[index];
 
-    println!("The value of the element at index {} is: {}", index, element);
+    println!(
+        "The value of the element at index {} is: {}",
+        index, element
+    );
 }

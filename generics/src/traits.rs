@@ -55,7 +55,7 @@ pub fn main() {
 
     notify(&article);
 
-    let pair = Pair::new(1,2);
+    let pair = Pair::new(1, 2);
     pair.cmp_display();
 
     let pair = Pair::new("hoge", "fuga");
@@ -71,10 +71,11 @@ fn notify2<T: Summary>(item: &T) {
 }
 
 fn some_function<T, U>(t: &T, u: &U)
-    where T: Display + Clone,
-          U: Clone + Debug
-{}
-
+where
+    T: Display + Clone,
+    U: Clone + Debug,
+{
+}
 
 struct Pair<T> {
     x: T,
@@ -83,10 +84,7 @@ struct Pair<T> {
 
 impl<T> Pair<T> {
     fn new(x: T, y: T) -> Self {
-        Self {
-            x,
-            y,
-        }
+        Self { x, y }
     }
 }
 
