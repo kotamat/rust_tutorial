@@ -24,4 +24,5 @@ members = [
     "generics",
     "tests",
     "functional_features",
+    "smart_pointer",
 ]

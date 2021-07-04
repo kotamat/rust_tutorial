@@ -113,6 +113,10 @@ name = "rust_tutorial"
 version = "0.1.0"
 
 [[package]]
+name = "smart_pointer"
+version = "0.1.0"
+
+[[package]]
 name = "structs"
 version = "0.1.0"
 
