@@ -25,4 +25,5 @@ members = [
     "tests",
     "functional_features",
     "smart_pointer",
+    "concurrency",
 ]

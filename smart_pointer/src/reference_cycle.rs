@@ -113,6 +113,7 @@ fn check_node_counts() {
         );
     }
 
+    //  parentはbranchだが、スコープ外になったので、Noneに戻る
     println!("leaf parent = {:?}", leaf.parent.borrow().upgrade());
     println!(
         "leaf strong = {}, weak = {}",
