@@ -27,4 +27,5 @@ members = [
     "smart_pointer",
     "concurrency",
     "oop",
+    "pattern_match"
 ]
