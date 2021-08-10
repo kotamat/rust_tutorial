@@ -26,4 +26,5 @@ members = [
     "functional_features",
     "smart_pointer",
     "concurrency",
+    "oop",
 ]

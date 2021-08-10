@@ -25,6 +25,7 @@ fn using_box() {
 // }
 #[derive(Debug)]
 enum List {
+    // Boxはポインターなので、再帰エラーは発生しない
     Cons(i32, Box<List>),
     Nil,
 }
