@@ -27,5 +27,9 @@ members = [
     "smart_pointer",
     "concurrency",
     "oop",
-    "pattern_match"
+    "pattern_match",
+    "unsafe_rust",
+    "advanced_trait",
+    "advanced_functions",
+    "macros",
 ]
